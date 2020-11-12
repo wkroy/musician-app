@@ -5,6 +5,7 @@ const jsonParser = bodyParser.json();
 const schema = require('../store/schema');
 
 // healthcheck
+// added comment to force a new pipeline build
 router.get('/health', (req, res) => {
   res.status('200').send("Status: ok!");
 });
